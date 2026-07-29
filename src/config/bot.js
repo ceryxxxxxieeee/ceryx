@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
+        state: "/ceryx #404",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -52,7 +52,7 @@ export const botConfig = {
 
     // Command prefix for text-based commands (e.g., "!" for "!ping").
     // Supports both slash commands and prefix commands.
-    prefix: process.env.PREFIX || "!",
+    prefix: process.env.PREFIX || "x",
   },
 
   // =========================
@@ -68,9 +68,9 @@ export const botConfig = {
 
     // Embed colors by application status.
     statusColors: {
-      pending: "#FFA500",
-      approved: "#00FF00",
-      denied: "#FF0000",
+      pending: "#070707",
+      approved: "#070707",
+      denied: "#070707",
     },
 
     // How long users must wait before submitting another application (hours).
@@ -83,7 +83,7 @@ export const botConfig = {
     deleteApprovedAfter: 30,
 
     // Role IDs allowed to manage applications.
-    managerRoles: [], // Will be populated from environment or database
+    managerRoles: [1528773962895458444], // Will be populated from environment or database
   },
 
   // =========================
@@ -93,14 +93,14 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+      primary: "#070707",
+      secondary: "#070707",
 
       // Standard status colors for success/error/warning/info messages.
-      success: "#57F287",
-      error: "#ED4245",
-      warning: "#FEE75C",
-      info: "#3498DB",
+      success: "#070707",
+      error: "#070707",
+      warning: "#070707",
+      info: "#070707",
 
       // Neutral utility colors.
       light: "#FFFFFF",
@@ -108,40 +108,40 @@ export const botConfig = {
       gray: "#99AAB5",
 
       // Discord-style palette shortcuts.
-      blurple: "#5865F2",
-      green: "#57F287",
+      blurple: "#070707",
+      green: "#070707",
       yellow: "#FEE75C",
       fuchsia: "#EB459E",
       red: "#ED4245",
-      black: "#000000",
+      black: "#070707",
 
       // Feature-specific colors.
       giveaway: {
-        active: "#57F287",
-        ended: "#ED4245",
+        active: "#070707",
+        ended: "#070707",
       },
       ticket: {
-        open: "#57F287",
-        claimed: "#FAA61A",
-        closed: "#ED4245",
-        pending: "#99AAB5",
+        open: "#070707",
+        claimed: "#070707",
+        closed: "#070707",
+        pending: "#070707",
       },
-      economy: "#F1C40F",
-      birthday: "#E91E63",
-      moderation: "#9B59B6",
+      economy: "#070707",
+      birthday: "#070707",
+      moderation: "#070707",
 
       // Ticket priority color mapping.
       priority: {
-        none: "#95A5A6",
-        low: "#3498db",
-        medium: "#2ecc71",
-        high: "#f1c40f",
-        urgent: "#e74c3c",
+        none: "#070707",
+        low: "#070707",
+        medium: "#070707",
+        high: "#070707",
+        urgent: "#070707",
       },
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "ceryxx",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -217,33 +217,33 @@ export const botConfig = {
     defaultCategory: null,
 
     // Role IDs allowed to manage/support tickets.
-    supportRoles: [],
+    supportRoles: [1528377713600237588],
 
     // Priority options users/staff can assign.
     priorities: {
       none: {
-        emoji: "⚪",
-        color: "#95A5A6",
+        emoji: "",
+        color: "#070707",
         label: "None",
       },
       low: {
-        emoji: "🟢",
-        color: "#2ECC71",
+        emoji: "",
+        color: "#070707",
         label: "Low",
       },
       medium: {
-        emoji: "🟡",
-        color: "#F1C40F",
+        emoji: "",
+        color: "070707",
         label: "Medium",
       },
       high: {
-        emoji: "🔴",
-        color: "#E74C3C",
+        emoji: "",
+        color: "#070707",
         label: "High",
       },
       urgent: {
-        emoji: "🚨",
-        color: "#E91E63",
+        emoji: "",
+        color: "#070707",
         label: "Urgent",
       },
     },
@@ -255,7 +255,7 @@ export const botConfig = {
     archiveCategory: null,
 
     // Channel ID where ticket logs are sent.
-    logChannel: null,
+    logChannel: 1528488209603100764,
   },
 
   // =========================
@@ -267,7 +267,7 @@ export const botConfig = {
     defaultDuration: 86400000,
 
     // Allowed winner count range.
-    minimumWinners: 1,
+    minimumWinners: 5,
     maximumWinners: 10,
 
     // Allowed giveaway duration range in milliseconds.
@@ -277,7 +277,7 @@ export const botConfig = {
     maximumDuration: 2592000000,
 
     // Role IDs allowed to host giveaways.
-    allowedRoles: [],
+    allowedRoles: [1528773962895458444],
 
     // Role IDs that bypass giveaway restrictions.
     bypassRoles: [],
@@ -291,7 +291,7 @@ export const botConfig = {
     defaultRole: null,
 
     // Channel ID where birthday announcements are posted.
-    announcementChannel: null,
+    announcementChannel: 1528387169704480938,
 
     // Timezone used to calculate birthday dates.
     timezone: "UTC",
@@ -372,15 +372,17 @@ export const botConfig = {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
     defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
+      "> _ _              wlcm 2        ` 𖹭，𖥻404z €eryx `  ！
+> _ _
+> _ _                        :   [law](https://discord.com/channels/1528278452959055983/1528385911769923634)，[annc](https://discord.com/channels/1528278452959055983/1528387169704480938)，[tix](https://discord.com/channels/1528278452959055983/1528387425259487442)",
     // Goodbye template posted when a user leaves.
     // Placeholders: {user}, {memberCount}
     defaultGoodbyeMessage:
-      "{user} has left the server. We now have {memberCount} members.",
+      "bye, {user}",
     // Channel ID for welcome messages.
-    defaultWelcomeChannel: null,
+    defaultWelcomeChannel: 1528391158143782932,
     // Channel ID for goodbye messages.
-    defaultGoodbyeChannel: null,
+    defaultGoodbyeChannel: 1528391158143782932,
   },
 
   // =========================
